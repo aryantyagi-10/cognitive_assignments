@@ -1,0 +1,12 @@
+import numpy as np;
+import matplotlib.pyplot as plt;
+M = float(input("Enter a value of M: "));
+x = np.linspace(-10,10,100);
+y1 = M * x**2;
+y2 = M * np.sin(x);
+plt.plot(x,y1,'g--',label = 'Y = M*X**X');
+plt.plot(x,y2,'y',label = 'M*sin(x)');
+plt.legend();
+plt.grid();
+plt.title("Mathematical Function");
+plt.show();

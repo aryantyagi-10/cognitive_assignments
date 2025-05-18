@@ -1,0 +1,27 @@
+import pandas as pd;
+import matplotlib.pyplot as plt;
+import seaborn as sns;
+df = pd.read_csv("C:/Users/Acer/Downloads/company_sales_data.csv");
+df1 = pd.read_csv("C:/Users/Acer/Downloads/company_sales_data.csv");
+sns.lineplot(x = 'month_number', y = 'total_profit',data = df, color = 'yellow');
+plt.title('Total Profit of All Months');
+plt.xlabel('Month');
+plt.ylabel('Total Profit');
+plt.grid();
+plt.show();
+product = ['facecream','facewash','toothpaste','bathingsoap','shampoo','moisturizer'];
+for p in product:
+    sns.lineplot(x = 'month_number', y = p, data = df, label = p);
+plt.title('Sales of All Products Over Time');
+plt.xlabel('Month');
+plt.ylabel('Sales');
+plt.legend();
+plt.grid();
+plt.show();
+c = ['month_number','total_units','total_profit'];
+df1.drop(columns = c,axis = 1).sum().plot(kind = 'bar',color = 'orange',figsize = (10,10));
+plt.title('Bar Chart for All Features/Attributes');
+plt.xlabel('Attributes');
+plt.ylabel('Sum');
+plt.grid();
+plt.show();
