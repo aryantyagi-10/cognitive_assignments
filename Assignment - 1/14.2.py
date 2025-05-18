@@ -1,0 +1,11 @@
+S1 = set(['A','B','C','D']);
+S2 = set(['A','C','E','G']);
+print(S1);
+print(S2);
+print(S1.union(S2));
+print(S1.intersection(S2));
+print(S1-S2);
+print(S2-S1);
+print(S2.difference(S1));
+print(S1.symmetric_difference(S2));
+print(S2.symmetric_difference(S1));

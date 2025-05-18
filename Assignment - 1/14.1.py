@@ -1,0 +1,11 @@
+S = set([1,2,3,4,5,6]);
+print(S);
+print(len(S));  
+S.add(8);
+print(S);
+S.add(5);
+print(S);
+S.pop();
+print(S);
+S.remove(4);
+print(S);

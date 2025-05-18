@@ -1,0 +1,11 @@
+import random as r;
+import string as s;
+password = r.sample(s.ascii_letters,8);
+passw = "".join(password);
+print(passw);
+ot = r.sample(s.digits,6);
+otp = "".join(ot);
+print(otp);
+co = r.sample(s.ascii_letters+s.digits,10);
+code = "".join(co);
+print(code);
