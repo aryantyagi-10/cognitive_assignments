@@ -1,0 +1,10 @@
+import numpy as np;
+a = np.array([-1.8,-1.6,-0.5,0.5,1.6,1.8,3.0]);
+floor_val = np.floor(a);
+print("Floor value of array is: ",floor_val);
+ceiling_val = np.ceil(a);
+print("\nCeiling value of array is: ",ceiling_val);
+truncated_val = np.trunc(a);
+print("\nTruncated value of array is: ",truncated_val);
+rounded_val = np.round(a);
+print("\nRounded value of array is: ",rounded_val);
