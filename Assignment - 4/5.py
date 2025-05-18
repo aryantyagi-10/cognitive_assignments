@@ -1,0 +1,12 @@
+import numpy as np;
+ucs420 = np.array([[10,20,30,40],[50,60,70,80],[90,15,20,35]]);
+print("Original 2-D array is: \n",ucs420,"\n");
+print("Mean of 2-D array is: ",np.mean(ucs420),"\n");
+print("Median of 2-D array is: ",np.median(ucs420),"\n");
+print("Maximum element of 2-D array is: ",np.max(ucs420),"\n");
+print("Minimum element of 2-D array is: ",np.min(ucs420),"\n");
+print("All unique element of 2-D array is: ",np.unique(ucs420),"\n");
+reshaped_ucs420 = ucs420.reshape(4,3);
+print("2-D array after reshaping to 4 rows and 3 columns is: \n",reshaped_ucs420,"\n");
+resized_ucs420 = np.resize(ucs420,(2,3));
+print("2-D array after resizing to 2 rows and 3 columns is: \n",resized_ucs420);
